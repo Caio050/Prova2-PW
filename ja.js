@@ -15,6 +15,18 @@ function login() {
         document.getElementById('login-error').innerText = 'Usuário ou senha incorretos.';
     }
 }
+function mostrarLogin() {
+    document.getElementById('login').style.display = 'block';
+    document.getElementById('mensagem').style.display = 'none';
+    document.getElementById('paragrafo').style.display = 'none';
+    document.getElementById('img').style.display = 'none';
+    document.getElementById('entrar-barra').style.display = 'none';
+    
+}
+function esconderLogin() {
+    document.getElementById('login').style.display = 'none';
+}
+
 
 function logout() {
     localStorage.removeItem('logado');

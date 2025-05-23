@@ -3,6 +3,28 @@ body {
     margin: 0;
     background-color: #f2f2f2;
 }
+.entrada {
+    background-color: #2196f3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end; /* Deixa o botão à direita */
+    align-items: center;
+}
+
+.entrada button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90px;
+    transition: background-color 0.3s;
+}
+
+.entrada button:hover {
+    background-color: #003355;
+}
 
 .navbar {
     background-color: #2196F3;
@@ -78,11 +100,60 @@ button {
 }
 
 .section{
-     width: 500px;
+     width: 700px;
     margin: 50px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
+}
+
+.entrada {
+    background-color: #2196F3;
+    padding: 10px;
+}
+.entrada button{
+    color: #f2f2f2;
+    background-color: none;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+}
+.main-content{
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 30px auto; /* Centraliza horizontalmente */
+    width: 400px; /* Largura do quadrado */
+    height: 400px; /* Altura do quadrado */
+    object-fit: cover; /* Garante que ela preencha o quadrado sem distorcer */
+    border-radius: 20px; /* Arredonda os cantos (opcional) */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+
+footer {
+    background-color: #2196f3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px;
+    font-size: 0.95em;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-content a:hover {
+    color: #cce7ff;
 }
 
 

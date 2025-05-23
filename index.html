@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ong </title>
     <link rel="stylesheet" href="css.css">
-</head>
-<body>
-    <!DOCTYPE html>
-<html>
-<head>
-   
-    <div class="login-container">
-        <h2>Login ONG</h2>
-        <input type="text" id="username" placeholder="Usuário"><p></p>
-        <input type="password" id="password" placeholder="Senha"><p></p>
-        <button onclick="login()">Entrar</button>
-        <p id="login-error" class="error"></p>
+
+
+    
+   <div class="entrada">
+    <button onclick="mostrarLogin()" id="entrar-barra">Entrar</button>
+</div>
+
+<div class="main-content">
+        <h1 id="mensagem">🌟 Bem-vindo à ONG Mãos que Ajudam</h1>
+        <p id="paragrafo">Transformando vidas, conectando corações.</p>
     </div>
+   
+    <img src="maos.jpg" alt="" id="img">
+    
+    
+
+   <div class="login-container" id="login" style="display: none;">
+    <h2>Login ONG</h2>
+    <input type="text" id="username" placeholder="Usuário"><p></p>
+    <input type="password" id="password" placeholder="Senha"><p></p>
+    <button onclick="login()" id="">Entrar</button>
+    <p id="login-error" class="error"></p>
+</div>
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 ONG Mãos que Ajudam. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@maosqueajudam.org">contato@maosqueajudam.org</a></p>
+    </div>
+</footer>
+
+
+
 <script src="ja.js"></script>
 
 
