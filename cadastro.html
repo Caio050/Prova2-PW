@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG - Plataforma de Voluntários</title>
+    <link rel="stylesheet" href="css.css">
+
+<body onload="checkSession()">
+    <div class="navbar">
+       <a href="cadastro.html"> <button onclick="showSection('cadastro')">Cadastro de Voluntário</button></a>
+        <button onclick="showSection('lista')">Lista de Voluntários</button>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <div id="cadastro" class="section">
+        <h2>Cadastro de Voluntário</h2>
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="cep" placeholder="CEP" maxlength="8" onblur="buscarCEP()">
+        <input type="text" id="endereco" placeholder="Endereço" readonly>
+        <button onclick="cadastrar()">Cadastrar</button>
+        <p id="cadastro-error" class="error"></p>
+    </div>
+
+    <div id="lista" class="section" style="display:none">
+    <h2>Lista de Voluntários</h2>
+    <input type="text" id="filtro" placeholder="Filtrar por nome" oninput="filtrar()">
+    <button onclick="limparTudo()">Limpar Tudo</button>
+    <div id="cards-container"></div> <!-- Esta div precisa existir -->
+</div>
+
+
+    
+
+<script src="ja.js"></script>
+</body>
+</html>

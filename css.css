@@ -1,0 +1,88 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.navbar {
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.navbar button {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #0b7dda;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+.navbar button:hover {
+    background-color: #064d7a;
+}
+
+.login-container{
+    max-width: 500px;
+    margin: 150px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 5px;
+    color: rgb(13, 13, 14);
+    background-color: #064d7a;
+}
+
+.error {
+    color: red;
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+.section{
+     width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
